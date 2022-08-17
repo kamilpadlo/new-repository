@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "http://127.0.0.1:8081/removeUser",
+			"name": "Remove User by Id",
 			"request": {
 				"method": "DELETE",
 				"header": [],
@@ -29,7 +29,7 @@
 			"response": []
 		},
 		{
-			"name": "http://127.0.0.1:8081/listUsers",
+			"name": "Get all users",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -51,7 +51,7 @@
 			"response": []
 		},
 		{
-			"name": "http://127.0.0.1:8081/user",
+			"name": "Get User by Id",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -74,7 +74,7 @@
 			"response": []
 		},
 		{
-			"name": "http://127.0.0.1:8081/addUser",
+			"name": "Add User",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -99,6 +99,37 @@
 					"port": "8081",
 					"path": [
 						"addUser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User by Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Kutas\",\r\n    \"password\" : \"password4\",\r\n    \"profession\" : \"\",\r\n    \"id\": 1656665974303\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8081/editUser",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"editUser"
 					]
 				}
 			},

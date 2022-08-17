@@ -6,15 +6,15 @@
         "id": 1656665960739
     },
     {
-        "name": "Ssie",
-        "password": "password2",
-        "profession": "librarian",
-        "id": 1656665974303
-    },
-    {
         "name": "Kutasa",
         "password": "password3",
         "profession": "teacher",
         "id": 1656665976649
+    },
+    {
+        "name": "Kutas",
+        "password": "password4",
+        "profession": "",
+        "id": 1656665974303
     }
 ]

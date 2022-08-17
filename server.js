@@ -1,12 +1,15 @@
 //npm install express
+//npm install cors
 //node server.js
 var express = require('express');
+var cors = require('cors');
 
 var app = express();
 app.use(
   express.urlencoded({
     extended: true,
-  })
+  }),
+  cors()
 );
 app.use(express.json());
 var fs = require("fs");
